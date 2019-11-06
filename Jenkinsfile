@@ -24,13 +24,13 @@ pipeline {
                     transfers: [
                       sshTransfer(
                           sourceFiles: 'index.php',
-                        )
-                     ]
-                   )
-                ]
             )
+                                ]
+                            )
+                        ]
+                    )
+                }
+            }
         }
     }
-  }
- }
 }
