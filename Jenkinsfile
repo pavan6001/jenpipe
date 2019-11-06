@@ -7,9 +7,6 @@ pipeline {
         }
       }
     stage ('DeploytoTest') {
-      when {
-        branch 'master'
-      }
       steps {
         withCredentails([string(credentailsId: 'cloud_user_pw', variable: 'USERPASS')]) {
           sshPublisher(
