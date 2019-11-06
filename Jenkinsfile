@@ -24,7 +24,7 @@ pipeline {
                                     sshTransfer(
                                         sourceFiles: 'index.php',
                                         remoteDirectory: '/var/www/html/',
-                                        execCommand: 'sudo /usr/bin/systemctl stop httpd && sudo /usr/bin/systemctl stop httpd'
+                                        execCommand: 'sudo /usr/bin/systemctl stop httpd && sudo /usr/bin/systemctl start httpd'
                                     )
                                 ]
                             )
