@@ -24,7 +24,7 @@ pipeline {
                                     sshTransfer(
                                         sourceFiles: 'index.php',
                                         remoteDirectory: '/var/www/html/',
-                                        execCommand: 'sudo systemctl restart httpd'
+                                        execCommand: 'sudo /usr/bin/systemctl restart httpd'
                                     )
                                 ]
                             )
