@@ -1,8 +1,8 @@
 <html>
  <head>
-  <title>PHP Test</title>
+  <title>PHP Server</title>
  </head>
  <body>
- <?php echo '<p>Hello World</p>'; ?> 
+ <?php echo '<h1>Server Deployment Successfull!!</h1>'; ?> 
  </body>
 </html>
